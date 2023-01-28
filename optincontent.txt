@@ -1,0 +1,17 @@
+<div class="optindescription">
+	<div class="optinimage">
+	<img src="img/Disambelin.png" />
+	</div>
+	
+	<h2>Pesan Online Sekarang!</h2>
+	<a href=""><img src="img/gofood.png" style="width:120px"/></a> <a href=""><img src="img/grab.png" style="width:120px"/></a> <a href=""><img src="img/shopee.png" style="width:120px"/></a> <a href=""><img src="img/maxim.png" style="width:120px"/></a> <a href=""><img src="img/airasia.png" style="width:120px"/></a> <a href=""><img src="img/traveloka.png" style="width:120px"/></a>
+</div>
+
+
+<div class="optinform">
+	<h2>Pesan Langsung</h2>
+	<a href=""><img src="img/wa.png" style="width:80px"/></a>
+	<form method="post" action="">
+	+62 8384 628 6633
+	</form>
+</div>
