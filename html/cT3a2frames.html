@@ -1,1 +1,166 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>jQuery cT3a2frames - A jQuery Text Animation Engine</title><style type="text/css">body{margin:0;padding:0;color:#5A1BE3}#effectT3a{display:none}#capr-T3a{position:absolute;top:50%;left:60%;margin:-9px 0 0 -95px}#capr-T3a #c-T3a{font-family:"Droid Sans",Arial,Helvetica,sans-serif;font-size:32px;line-height:48px;font-weight: bold;text-shadow: 1px 1px 0px rgb(221, 221, 221), 2px 2px 0px rgb(68, 68, 68);}#capr-T3a #c-T3a>div{position:relative}</style><script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js' type='text/javascript'></script><script type="text/javascript">jQuery.noConflict();</script><script src='https://sites.google.com/site/archivesiugi/for_post/jquery.easing.1.3.js' type='text/javascript'></script><script src="https://sites.google.com/site/archivesiugi/for_post/cT3a.min.js" type="text/javascript"></script><script type="text/javascript">var isOn=0,sets,T3a,toAnimate="#effect",settings={animation:8,animationType:"in",backwards:!1,easing:"easeOutQuint",speed:1E3,sequenceDelay:100,startDelay:0,offsetX:100,offsetY:100,onComplete:fireThis,restoreHTML:!0};jQuery(document).ready(function(){T3a=jQuery("#effect");jQuery.cT3a(settings);jQuery.cT3a.animate(toAnimate)}); function fireThis(){if(isOn!==13){isOn<13?isOn++:isOn=0;switch(isOn){case 1:sets={animationType:"out",color:"#5A1BE3",restoreHTML:!1};break;case 2:T3a.html("http://caprT3a.blogspot.com");sets={animation:1};break;case 3:sets={animation:1,animationType:"out",color:"#5A1BE3",restoreHTML:!1};break;case 4:T3a.html("caprT3a | CAPRicornT3a");sets={animation:6};break;case 5:sets={animation:6,animationType:"out",color:"#5A1BE3",restoreHTML:!1};break;case 6:T3a.html("Catatan pribadi cowo modern yang suka minum secangkir Tea");sets={animation:11,backwards:!0};break;case 7:sets={animation:11,animationType:"out",color:"#5A1BE3", backwards:!0,restoreHTML:!1};break;case 8:T3a.html("Buku Catatan si Ugi | CAPRicornT3a");sets={animation:2,color:"#5A1BE3",easing:"easeOutBounce"};break;case 9:sets={animation:2,animationType:"out",speed:500,easing:"easeInElastic",color:"#5A1BE3",restoreHTML:!1};break;case 10:T3a.html("Tempat Belajar dan Berbagi"),sets={animation:14,startDelay:1E3,linked:"false",hyperlink:"null",color:"#5A1BE3",linkTarget:"null"};break;case 11:sets={animation:9,animationType:"out",onComplete:null}}jQuery.cT3a.animate(toAnimate,sets)}};</script></head><body><div id="capr-T3a"><div id="c-T3a"><div id="effect">Welcome to Buku Catatan si Ugi</div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jQuery cT3a2frames - A jQuery Text Animation Engine</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        color: #5A1BE3
+      }
+
+      #effectT3a {
+        display: none
+      }
+
+      #capr-T3a {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        margin: -9px 0 0 -95px
+      }
+
+      #capr-T3a #c-T3a {
+        font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px rgb(221, 221, 221), 2px 2px 0px rgb(68, 68, 68);
+      }
+
+      #capr-T3a #c-T3a>div {
+        position: relative
+      }
+    </style>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js' type='text/javascript'></script>
+    <script type="text/javascript">
+      jQuery.noConflict();
+    </script>
+    <script src='https://sites.google.com/site/archivesiugi/for_post/jquery.easing.1.3.js' type='text/javascript'></script>
+    <script src="https://sites.google.com/site/archivesiugi/for_post/cT3a.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var isOn = 0,
+        sets, T3a, toAnimate = "#effect",
+        settings = {
+          animation: 8,
+          animationType: "in",
+          backwards: !1,
+          easing: "easeOutQuint",
+          speed: 1E3,
+          sequenceDelay: 100,
+          startDelay: 0,
+          offsetX: 100,
+          offsetY: 100,
+          onComplete: fireThis,
+          restoreHTML: !0
+        };
+      jQuery(document).ready(function() {
+        T3a = jQuery("#effect");
+        jQuery.cT3a(settings);
+        jQuery.cT3a.animate(toAnimate)
+      });
+
+      function fireThis() {
+        if (isOn !== 13) {
+          isOn < 13 ? isOn++ : isOn = 0;
+          switch (isOn) {
+            case 1:
+              sets = {
+                animationType: "out",
+                color: "#5A1BE3",
+                restoreHTML: !1
+              };
+              break;
+            case 2:
+              T3a.html("http://caprT3a.blogspot.com");
+              sets = {
+                animation: 1
+              };
+              break;
+            case 3:
+              sets = {
+                animation: 1,
+                animationType: "out",
+                color: "#5A1BE3",
+                restoreHTML: !1
+              };
+              break;
+            case 4:
+              T3a.html("caprT3a | CAPRicornT3a");
+              sets = {
+                animation: 6
+              };
+              break;
+            case 5:
+              sets = {
+                animation: 6,
+                animationType: "out",
+                color: "#5A1BE3",
+                restoreHTML: !1
+              };
+              break;
+            case 6:
+              T3a.html("Catatan pribadi cowo modern yang suka minum secangkir Tea");
+              sets = {
+                animation: 11,
+                backwards: !0
+              };
+              break;
+            case 7:
+              sets = {
+                animation: 11,
+                animationType: "out",
+                color: "#5A1BE3",
+                backwards: !0,
+                restoreHTML: !1
+              };
+              break;
+            case 8:
+              T3a.html("Buku Catatan si Ugi | CAPRicornT3a");
+              sets = {
+                animation: 2,
+                color: "#5A1BE3",
+                easing: "easeOutBounce"
+              };
+              break;
+            case 9:
+              sets = {
+                animation: 2,
+                animationType: "out",
+                speed: 500,
+                easing: "easeInElastic",
+                color: "#5A1BE3",
+                restoreHTML: !1
+              };
+              break;
+            case 10:
+              T3a.html("Tempat Belajar dan Berbagi"), sets = {
+                animation: 14,
+                startDelay: 1E3,
+                linked: "false",
+                hyperlink: "null",
+                color: "#5A1BE3",
+                linkTarget: "null"
+              };
+              break;
+            case 11:
+              sets = {
+                animation: 9,
+                animationType: "out",
+                onComplete: null
+              }
+          }
+          jQuery.cT3a.animate(toAnimate, sets)
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="capr-T3a">
+      <div id="c-T3a">
+        <div id="effect">Welcome to Buku Catatan si Ugi</div>
+      </div>
+    </div>
+  </body>
+</html>
