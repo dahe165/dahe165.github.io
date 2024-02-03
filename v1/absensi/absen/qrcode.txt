@@ -1,4 +1,4 @@
-        <div id="appendQr">
+        <div id="appendQr" style="display: none;">
     
         <div id="qr-4cf949ee-0199-48d5-921a-5db217a5835b" class="qrlist" style="min-height: 100px !important;">
             <center>
