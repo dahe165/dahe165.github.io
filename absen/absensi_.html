@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://103.9.125.68:8017/v1/absensi/absen/view? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <title>Absensi</title>
+    <style>
+body:before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  background-size:cover;
+  background-position:center center;
+  display: block;
+  background-image: url(./Absensi_files/air.gif);
+  width: 100%;
+  height: 100%;
+  opacity:0.9;
+  filter: blur(0.6px) ;
+  -webkit-filter: blur(0.6px) ;
+}	
+body::-webkit-scrollbar {
+    display: none;
+}
+        /* div img {
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+        } */
+        /* div .segno {
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+        } */
+		.segno{background-color:#fff;}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        h3 {
+            color: #2980b9;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .container {
+            padding: 30px 200px;
+        }
+        @media (max-width: 1000px) {
+            .container {
+                padding: 30px 0px !important;
+            }
+            img.img-logo {
+                width: 100px !important;
+                height: 100px !important;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .box-title {
+                display: block !important;
+            }
+        }
+        .box-title {
+            color: #2980b9 !important;
+            padding-top: 30px;
+            text-align: center;
+            margin-top: -110px;
+        }
+        .box-title h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+        .box-bottom {
+            text-align: center;
+            color: #2980b9 !important;
+        }
+        .box-bottom p {
+            margin-bottom: 0px;
+            font-weight: bold;
+        }
+
+        .box-center {
+            width: 100%;
+            height: auto;
+            margin: 50px 20px;
+            margin-bottom: 0px;
+        }
+        .box-center .left {
+            width: 30%;
+            min-height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100px;
+            font-size: 20px;
+            background-color: #2980b9;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+
+        .box-footer {
+            width: 100%;
+            min-height: 150px;
+            background-color: rgba(41, 128, 185, 0.3);
+            margin-top: 30px;
+            border-radius: 5px;
+            padding: 20px 50px;
+            text-align: center !important;
+            color: #2980b9;
+            font-size: 13px !important;
+        }
+        .box-footer p.title {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .box-footer p.step {
+            text-align: left;
+            font-weight: bold;
+        }
+        .box-footer p.step-content {
+            text-align: left;
+        }
+
+        .box-description {
+            background-color: #2980b9;
+            width: 100%;
+            min-height: 100px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        img.img-logo {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin: 0;
+            margin-bottom: -30px;
+            margin-top: -20px;
+        }
+		h3{display:none!important;}
+		h3.office{display:block!important;font-size: 36px;}
+		.highlight-tex {
+    background: #2980b9;
+    background: -webkit-linear-gradient( left,#FFFFFF 0%,#34c0eb 25%,#2980b9 50%,#6F9FF8 100%) repeat;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-animation-name: masked-animation;
+    -webkit-animation-duration: 100s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear
+}
+
+@-webkit-keyframes masked-animation {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: -8000px -3000px
+    }
+}
+.highlight-texx {
+    background: #ED46A5;
+    background: -webkit-linear-gradient( right,#FFFFFF 0%,#5FFBF1 25%,#ED46A5 50%,#6F9FF8 100%) repeat;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-animation-name: masked-animasi;
+    -webkit-animation-duration: 100s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear
+}
+
+@-webkit-keyframes masked-animasi {
+    100% {
+        background-position: 0 0
+    }
+
+    0% {
+        background-position: -8000px -3000px
+    }
+}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+  $(".pencet").click();
+});
+</script>
+</head>
+<body>
+    <div class="container">
+        <!-- LOGO -->
+        <img class="img-logo" src="./Absensi_files/logo-perumda-tirta-benteng.png" alt="">
+		<!-- END LOGO -->
+
+        <div class="box-title">
+            <h1>Scan Disini</h1>
+            <h5>
+                Scan kode QR untuk melakukan absensi.
+            </h5>
+            <h5 class="office highlight-texx" id="ct"></h5>
+        </div>
+
+        <div class="row box-center" id="box" style="display: none;">
+            
+                <div class="pencet col-md-4 col-sm-12 left" onclick="_openOffice('301782cb-d744-4331-8750-423f7735913a')">
+                    Office TB - Tangerang
+                </div>
+            
+            <div class="clearfix"></div>
+        </div>
+		
+        <br>
+		
+        <div id="appendQr" style="display: none;">
+        <div id="qr-301782cb-d744-4331-8750-423f7735913a" class="qrlist" style="min-height: 100px !important;">
+            <center>
+                <svg width="324" height="324" class="segno"><path transform="scale(4)" class="qrline" stroke="#000" d="M4 4.5h7m3 0h1m3 0h2m1 0h1m2 0h3m1 0h1m4 0h2m1 0h1m3 0h2m4 0h2m1 0h2m3 0h2m3 0h3m1 0h1m1 0h2m1 0h1m1 0h7m-73 1h1m5 0h1m1 0h1m1 0h2m8 0h1m1 0h1m4 0h1m2 0h1m1 0h2m1 0h7m2 0h1m1 0h1m1 0h4m1 0h1m2 0h1m1 0h2m2 0h1m3 0h1m5 0h1m-73 1h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h2m2 0h2m2 0h1m4 0h1m2 0h3m4 0h4m3 0h3m1 0h4m1 0h3m1 0h1m4 0h1m1 0h3m1 0h1m-73 1h1m1 0h3m1 0h1m1 0h1m3 0h2m1 0h1m3 0h2m2 0h1m3 0h2m1 0h2m3 0h2m1 0h1m2 0h1m1 0h1m1 0h3m1 0h3m4 0h3m3 0h2m2 0h1m1 0h3m1 0h1m-73 1h1m1 0h3m1 0h1m2 0h1m1 0h2m5 0h1m2 0h2m1 0h7m10 0h2m1 0h5m8 0h1m2 0h2m1 0h2m1 0h1m1 0h3m1 0h1m-73 1h1m5 0h1m1 0h1m1 0h2m1 0h2m4 0h1m3 0h2m3 0h1m1 0h2m1 0h1m1 0h1m1 0h5m1 0h2m3 0h2m3 0h1m1 0h1m1 0h6m3 0h1m5 0h1m-73 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-64 1h1m3 0h1m2 0h1m1 0h3m3 0h1m3 0h1m1 0h3m4 0h1m5 0h2m3 0h3m1 0h1m3 0h2m1 0h1m2 0h1m-63 1h5m1 0h4m1 0h2m1 0h1m3 0h2m1 0h8m1 0h2m2 0h3m4 0h2m1 0h5m1 0h5m8 0h3m1 0h1m1 0h1m1 0h1m-72 1h1m2 0h3m2 0h1m2 0h2m3 0h1m5 0h5m2 0h2m1 0h1m4 0h1m3 0h2m3 0h1m1 0h1m1 0h1m4 0h4m3 0h2m1 0h1m1 0h5m-72 1h5m1 0h2m1 0h3m1 0h2m1 0h1m5 0h2m3 0h1m2 0h1m3 0h1m3 0h1m1 0h1m2 0h1m1 0h4m1 0h2m5 0h2m3 0h1m1 0h3m5 0h1m-69 1h1m3 0h1m1 0h2m4 0h3m5 0h2m5 0h2m3 0h1m1 0h2m2 0h3m2 0h1m2 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h2m2 0h1m3 0h2m-73 1h1m1 0h3m1 0h3m2 0h1m1 0h1m1 0h2m3 0h2m5 0h1m5 0h1m1 0h2m1 0h1m2 0h1m3 0h1m3 0h1m1 0h3m2 0h1m1 0h1m2 0h1m2 0h2m3 0h1m-69 1h3m4 0h1m2 0h1m2 0h1m1 0h4m1 0h2m2 0h1m2 0h3m4 0h1m1 0h1m1 0h5m2 0h1m3 0h2m2 0h2m1 0h2m1 0h1m2 0h2m1 0h1m2 0h2m1 0h1m-69 1h6m1 0h1m3 0h1m1 0h1m1 0h2m3 0h1m1 0h3m2 0h1m1 0h4m1 0h1m4 0h1m3 0h1m1 0h2m1 0h1m3 0h1m1 0h1m1 0h1m1 0h5m1 0h5m-72 1h1m1 0h1m4 0h2m1 0h3m1 0h5m1 0h1m3 0h2m1 0h4m2 0h2m2 0h2m2 0h1m1 0h5m1 0h5m1 0h1m4 0h1m2 0h1m2 0h1m4 0h1m-72 1h4m1 0h1m1 0h2m3 0h1m1 0h2m1 0h1m1 0h2m2 0h2m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m3 0h1m1 0h4m1 0h4m9 0h1m2 0h1m1 0h1m3 0h2m-73 1h2m2 0h1m2 0h4m1 0h2m1 0h2m3 0h1m3 0h2m3 0h3m1 0h1m1 0h1m1 0h1m2 0h1m1 0h5m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h5m1 0h3m-68 1h2m1 0h1m1 0h3m4 0h1m1 0h2m2 0h3m1 0h2m3 0h1m3 0h1m6 0h1m1 0h1m3 0h2m1 0h4m3 0h2m1 0h1m1 0h2m1 0h2m1 0h5m-73 1h4m3 0h1m3 0h3m3 0h1m1 0h3m2 0h2m1 0h3m1 0h1m4 0h1m3 0h4m1 0h1m1 0h1m2 0h1m1 0h3m1 0h1m2 0h1m1 0h2m2 0h3m4 0h1m-73 1h2m2 0h1m1 0h1m5 0h1m1 0h10m1 0h1m1 0h1m2 0h2m2 0h3m4 0h2m1 0h5m2 0h1m1 0h2m1 0h1m1 0h1m4 0h3m3 0h3m-71 1h1m1 0h1m3 0h2m2 0h3m6 0h2m1 0h4m2 0h2m4 0h3m1 0h5m2 0h1m1 0h1m3 0h1m1 0h2m1 0h1m2 0h1m2 0h1m3 0h1m1 0h1m1 0h1m-70 1h2m2 0h2m2 0h2m2 0h2m1 0h2m2 0h2m4 0h6m2 0h3m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m4 0h4m2 0h1m2 0h2m2 0h4m-69 1h2m5 0h5m2 0h5m1 0h1m1 0h1m1 0h1m2 0h1m1 0h2m4 0h1m1 0h1m2 0h4m4 0h2m2 0h2m1 0h3m2 0h1m1 0h2m3 0h2m-73 1h1m1 0h1m1 0h9m6 0h1m1 0h1m2 0h8m3 0h4m2 0h14m5 0h3m1 0h6m1 0h2m-73 1h1m1 0h1m1 0h1m3 0h1m2 0h1m2 0h1m1 0h2m2 0h5m3 0h3m1 0h1m4 0h1m1 0h6m3 0h1m2 0h2m1 0h1m2 0h4m2 0h2m3 0h5m-72 1h4m1 0h1m1 0h2m1 0h2m2 0h1m2 0h2m1 0h1m2 0h1m1 0h1m1 0h1m2 0h3m1 0h1m1 0h2m4 0h2m1 0h1m1 0h3m2 0h6m1 0h5m1 0h1m1 0h5m-71 1h3m3 0h2m1 0h1m2 0h1m2 0h2m1 0h2m2 0h1m3 0h1m9 0h3m1 0h3m3 0h6m1 0h1m5 0h1m2 0h1m3 0h1m2 0h2m-73 1h1m2 0h6m1 0h4m4 0h1m2 0h2m1 0h5m2 0h1m1 0h1m1 0h3m5 0h6m2 0h1m2 0h1m1 0h2m2 0h2m1 0h8m-69 1h1m1 0h1m3 0h1m1 0h1m2 0h1m2 0h1m3 0h1m2 0h3m1 0h6m2 0h3m1 0h1m1 0h2m1 0h2m4 0h2m3 0h1m1 0h2m4 0h2m2 0h1m1 0h2m1 0h1m-73 1h1m1 0h1m1 0h5m2 0h2m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m3 0h2m1 0h3m1 0h1m5 0h1m1 0h3m1 0h1m1 0h1m2 0h1m4 0h1m2 0h3m1 0h2m1 0h1m2 0h2m-73 1h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m4 0h1m1 0h9m3 0h2m3 0h1m1 0h1m2 0h1m1 0h1m1 0h7m1 0h2m4 0h4m-69 1h1m1 0h2m1 0h2m2 0h3m1 0h1m5 0h3m2 0h1m1 0h5m2 0h5m4 0h1m1 0h1m3 0h2m1 0h4m1 0h2m4 0h2m2 0h1m-66 1h1m1 0h3m1 0h2m4 0h1m1 0h3m2 0h1m1 0h2m1 0h2m3 0h2m4 0h2m1 0h1m1 0h2m2 0h1m5 0h2m4 0h2m4 0h3m1 0h4m-71 1h1m5 0h1m1 0h4m2 0h1m4 0h2m6 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h4m1 0h2m4 0h2m-73 1h1m2 0h1m1 0h1m3 0h1m2 0h2m4 0h3m1 0h2m2 0h1m2 0h2m2 0h3m3 0h1m4 0h3m1 0h5m1 0h1m1 0h3m2 0h1m3 0h2m5 0h1m-73 1h3m1 0h1m1 0h1m1 0h1m1 0h6m4 0h1m3 0h1m1 0h2m3 0h1m4 0h1m1 0h1m2 0h2m1 0h1m1 0h6m5 0h2m1 0h1m1 0h6m1 0h1m1 0h2m-73 1h1m2 0h3m1 0h1m1 0h1m4 0h2m2 0h1m1 0h6m1 0h4m1 0h1m2 0h3m2 0h3m2 0h1m1 0h1m7 0h1m1 0h1m2 0h1m2 0h8m-69 1h1m1 0h3m10 0h1m2 0h1m2 0h1m1 0h1m3 0h1m2 0h2m1 0h2m1 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h2m1 0h6m3 0h1m1 0h1m6 0h2m-72 1h2m5 0h1m4 0h1m2 0h1m2 0h2m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h2m2 0h2m4 0h2m1 0h1m2 0h2m2 0h1m4 0h2m3 0h1m5 0h1m-73 1h1m2 0h1m1 0h2m1 0h2m1 0h1m1 0h4m3 0h4m7 0h1m1 0h7m2 0h4m1 0h3m1 0h1m2 0h1m2 0h1m2 0h1m4 0h1m1 0h1m2 0h1m1 0h1m-73 1h1m1 0h2m4 0h1m2 0h2m1 0h1m1 0h1m3 0h3m1 0h2m1 0h1m1 0h3m3 0h1m1 0h1m3 0h2m2 0h2m10 0h3m2 0h1m1 0h1m1 0h1m1 0h4m-71 1h1m1 0h1m2 0h2m2 0h6m1 0h6m1 0h1m9 0h1m1 0h1m2 0h2m2 0h1m1 0h2m1 0h3m2 0h2m4 0h1m2 0h2m1 0h1m1 0h3m1 0h2m-73 1h1m1 0h2m3 0h1m4 0h2m1 0h2m2 0h1m1 0h2m1 0h1m1 0h2m5 0h3m2 0h2m2 0h1m1 0h1m2 0h1m1 0h1m2 0h7m2 0h1m4 0h1m1 0h1m2 0h1m-72 1h1m1 0h1m1 0h5m1 0h1m1 0h1m3 0h1m3 0h2m2 0h8m1 0h2m1 0h2m3 0h1m2 0h5m2 0h1m5 0h2m1 0h1m3 0h9m-71 1h1m1 0h1m3 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h2m1 0h1m3 0h3m4 0h1m4 0h5m3 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m1 0h1m3 0h1m2 0h2m-73 1h1m2 0h2m1 0h1m1 0h2m2 0h2m3 0h1m1 0h2m2 0h2m1 0h1m1 0h3m2 0h1m1 0h1m1 0h5m2 0h1m1 0h1m1 0h3m4 0h1m1 0h3m2 0h3m1 0h1m1 0h1m1 0h3m-70 1h2m3 0h2m6 0h1m1 0h2m1 0h2m1 0h1m3 0h3m3 0h1m1 0h1m1 0h2m1 0h1m2 0h1m3 0h1m1 0h8m5 0h2m3 0h1m2 0h1m-72 1h1m1 0h1m1 0h7m1 0h1m1 0h3m1 0h4m2 0h8m1 0h4m1 0h1m2 0h8m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m2 0h6m2 0h1m-73 1h3m1 0h2m16 0h1m3 0h1m2 0h2m1 0h1m2 0h3m2 0h3m2 0h3m3 0h1m3 0h4m3 0h1m1 0h2m1 0h1m2 0h3m-71 1h1m1 0h4m1 0h1m1 0h1m1 0h1m1 0h5m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h3m1 0h1m3 0h2m2 0h4m1 0h1m1 0h2m2 0h3m2 0h4m2 0h6m-71 1h1m4 0h2m1 0h2m4 0h2m1 0h1m1 0h1m2 0h1m1 0h1m2 0h2m1 0h7m1 0h1m1 0h2m1 0h2m7 0h1m1 0h1m2 0h2m1 0h3m7 0h1m-69 1h4m2 0h2m4 0h7m6 0h1m1 0h1m2 0h6m4 0h1m3 0h2m1 0h2m3 0h2m4 0h5m1 0h1m1 0h2m-72 1h2m3 0h1m1 0h4m1 0h2m7 0h1m2 0h2m1 0h2m1 0h1m1 0h1m2 0h3m3 0h3m3 0h1m3 0h1m3 0h4m5 0h1m1 0h2m3 0h1m-70 1h5m1 0h2m1 0h1m1 0h4m1 0h1m2 0h2m4 0h1m2 0h4m1 0h1m3 0h3m1 0h3m4 0h1m5 0h1m1 0h7m4 0h1m-70 1h3m1 0h2m1 0h2m1 0h2m2 0h2m3 0h1m2 0h1m2 0h1m2 0h2m2 0h4m1 0h3m5 0h2m1 0h1m2 0h9m1 0h1m1 0h2m2 0h1m3 0h2m-72 1h3m1 0h3m1 0h2m1 0h2m6 0h3m2 0h1m1 0h3m1 0h1m4 0h1m1 0h1m3 0h4m5 0h3m2 0h1m1 0h1m4 0h1m1 0h4m3 0h1m-70 1h1m1 0h1m2 0h1m3 0h3m2 0h2m1 0h3m1 0h1m3 0h4m3 0h3m2 0h3m5 0h1m1 0h2m2 0h2m1 0h1m2 0h1m1 0h3m1 0h2m1 0h1m-70 1h1m1 0h2m1 0h2m5 0h1m12 0h1m2 0h1m3 0h1m1 0h4m1 0h1m4 0h3m3 0h1m2 0h1m1 0h1m1 0h7m1 0h3m1 0h4m-69 1h1m6 0h5m1 0h2m1 0h5m4 0h4m1 0h4m1 0h1m1 0h3m2 0h1m4 0h2m1 0h3m4 0h3m2 0h1m1 0h1m-69 1h2m1 0h2m1 0h1m3 0h1m2 0h2m3 0h1m2 0h1m3 0h2m2 0h1m1 0h1m2 0h3m1 0h1m2 0h1m2 0h1m2 0h1m1 0h1m1 0h1m1 0h1m3 0h1m3 0h3m1 0h2m2 0h1m-70 1h1m2 0h1m4 0h2m2 0h5m3 0h3m1 0h2m1 0h4m5 0h2m1 0h5m1 0h1m2 0h1m1 0h3m1 0h2m1 0h1m1 0h2m2 0h2m2 0h1m2 0h2m-72 1h2m1 0h1m1 0h2m2 0h1m2 0h1m1 0h1m2 0h2m3 0h4m2 0h3m2 0h1m1 0h2m3 0h1m2 0h5m2 0h2m1 0h1m1 0h2m1 0h1m3 0h3m1 0h1m5 0h1m-70 1h2m3 0h3m3 0h1m1 0h2m5 0h1m2 0h1m4 0h2m1 0h1m1 0h1m1 0h1m1 0h3m6 0h1m2 0h5m5 0h1m3 0h2m3 0h2m-73 1h1m3 0h1m1 0h2m1 0h2m1 0h2m4 0h5m1 0h7m2 0h1m1 0h3m4 0h7m2 0h4m1 0h1m1 0h1m1 0h9m1 0h2m-64 1h1m1 0h6m1 0h1m2 0h3m1 0h1m3 0h3m1 0h1m3 0h2m2 0h5m3 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m3 0h3m1 0h1m-73 1h7m1 0h1m2 0h1m2 0h3m6 0h2m1 0h1m1 0h1m2 0h3m1 0h5m4 0h1m1 0h1m1 0h3m1 0h2m1 0h2m1 0h3m1 0h3m1 0h1m1 0h1m2 0h2m-73 1h1m5 0h1m3 0h3m1 0h2m2 0h2m2 0h3m3 0h1m1 0h1m10 0h2m1 0h1m3 0h9m1 0h1m5 0h1m3 0h1m2 0h2m-73 1h1m1 0h3m1 0h1m1 0h2m1 0h2m2 0h1m3 0h2m2 0h6m1 0h2m2 0h5m2 0h8m1 0h2m8 0h10m1 0h2m-73 1h1m1 0h3m1 0h1m1 0h1m5 0h3m1 0h1m2 0h2m1 0h3m3 0h3m2 0h3m3 0h3m1 0h2m1 0h1m7 0h2m4 0h2m2 0h1m1 0h3m1 0h1m-73 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m2 0h1m2 0h1m2 0h1m1 0h1m1 0h2m1 0h2m5 0h1m1 0h2m1 0h1m1 0h5m1 0h1m1 0h1m2 0h1m1 0h2m1 0h2m3 0h1m1 0h1m1 0h2m1 0h1m-73 1h1m5 0h1m1 0h5m4 0h1m2 0h2m3 0h1m6 0h1m2 0h3m1 0h1m1 0h5m4 0h1m1 0h1m2 0h2m1 0h1m3 0h1m4 0h2m3 0h1m-73 1h7m1 0h2m3 0h1m1 0h5m1 0h3m2 0h1m2 0h3m2 0h3m5 0h2m2 0h1m2 0h1m1 0h2m3 0h2m3 0h1m3 0h3m1 0h1m1 0h2"></path></svg>
+            </center>
+            <h3>
+                Office TB - Tangerang
+            </h3>
+        </div>
+		</div>
+            <h3 class="office highlight-tex">
+                WTP - SITANALA
+            </h3>
+        <div class="box-footer">
+            <p class="title">Cara Scan QR Code</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p class="step">Step 1- Scan QR</p>
+                    <p class="step-content">
+                        Aktifkan kamera, lalu scan kode QR, tiap kode bersifat unik, dan akan invalid setelah penggunaan.<br>
+                        Kode QR secara periodik akan berubah demi keamanan anda.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="step">Step 2 - Foto Diri</p>
+                    <p class="step-content">
+                        Arahkan kamera dengan wajah anda sebagai pusatnya, usahakan sebagian bahu dan dada bagian atas masih termasuk di dalam frame.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="step">Step 3 - Submit</p>
+                    <p class="step-content">
+                        Klik Submit untuk menyimpan data, selanjutnya, detail data absen anda akan terekam ke sistem. <br>Terima kasih atas kerjasama anda.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <p>
+                <b>KANTOR PERUMDA TIRTABENTENG</b><br>
+                Jl. Komp. Pu Prosida Bendungan Pasar Baru, Kel. Mekarsari, Kec. Negalasari, Kota Tangerang - Banten
+                <!-- <b>KANTOR PERUMDA CILEGON</b><br />
+                Jalan Nuri No.1, Cibeber, Cilegon, Cibeber, Kec. Cibeber, Banten, 42431 -->
+            </p>
+        </div>
+
+    </div>
+
+<script>
+    var months = [
+        "Januari",
+        "Februari",
+        "Maret",
+        "April",
+        "Mei",
+        "Juni",
+        "Juli",
+        "Agustus",
+        "September",
+        "Oktober",
+        "November",
+        "Desember",
+    ];
+    function display_ct5() {
+        var x = new Date()
+        var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+
+        var x1=x.getDate() + " " + months[x.getMonth()] + " " + x.getFullYear();
+        x1 = x1 + " - " + add_zero_leading(x.getHours()) + ":" +  add_zero_leading(x.getMinutes()) + ":" +  add_zero_leading(x.getSeconds()) + ":" + ampm;
+        document.getElementById('ct').innerHTML = x1;
+        display_c5();
+    }
+    function display_c5(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct5()',refresh)
+    }
+    function add_zero_leading(secs) {
+        if (secs < 10) {
+            return "0" + secs;
+        }
+        return secs;
+    }
+    display_ct5();
+
+    function _openOffice(id) {
+        officeSelected = id;
+        // document.querySelector(".qrlist").style.display = 'none';
+        // document.querySelector("#box").style.display = 'none';
+        // document.querySelector("#qr-"+id).style.display = 'block';
+
+        $(`#box`).hide();
+        $(`.qrlist`).hide();
+        $(`#appendQr`).show();
+        $(`#qr-${id}`).show();
+    }
+
+    let officeSelected = null;
+    const host_url = "http://103.9.125.68:8017/"
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+        let _office = params.office;
+        if(_office && _office != 'null') {
+            officeSelected = _office;
+            // _openOffice(_office)
+        }
+
+        $("#appendQr").load(host_url+"v1/absensi/absen/qrcode").hide();
+    });
+
+    setInterval(function(){
+        if(officeSelected) {
+            $("#appendQr").load(host_url+"/v1/absensi/absen/qrcode?officeId="+officeSelected);
+        }
+    }, 2000)
+
+
+</script></body></html>
