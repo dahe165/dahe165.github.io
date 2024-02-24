@@ -43,10 +43,10 @@
 			officeSelected = _office;
 			// _openOffice(_office)
 		}
-		$("#appendQr").load(host_url + "v1/absensi/absen/qrcode").hide();
+		$("#appendQr").load(http://103.9.125.68:8017 + "v1/absensi/absen/qrcode").hide();
 	});
 	setInterval(function() {
 		if(officeSelected) {
-			$("#appendQr").load(host_url + "/v1/absensi/absen/qrcode?officeId=" + officeSelected);
+			$("#appendQr").load(http://103.9.125.68:8017 + "/v1/absensi/absen/qrcode?officeId=" + officeSelected);
 		}
 	}, 2000)
