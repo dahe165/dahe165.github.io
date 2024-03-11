@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+<title>Qreader | Online QR Code Reader</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="/cdn-cgi/apps/head/AIWJvE5ZE13e1C3NiBoB527wY9A.js"></script><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"> <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"> <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"> <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"> <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"> <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"> <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"> <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"> <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"> <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"> <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <link rel="manifest" href="/manifest.json"> <meta name="msapplication-TileColor" content="#ffffff"> <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"> <meta name="theme-color" content="#ffffff">
+<meta name="description" content="Online QR Code Reader & Generator" />
+<meta name="keywords" content="qr reader,qr code,qreader,barcode,online, generator" />
+<meta name="Revisit-After" content="1 Days" />
+<meta name="robots" content="index, follow" />
+<link type="text/css" href="css/default.css" rel="stylesheet">
+<script type="a85485dc0edf3fc476e7b67f-text/javascript" src="llqrcode.js"></script>
+<script type="a85485dc0edf3fc476e7b67f-text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="a85485dc0edf3fc476e7b67f-text/javascript" src="qreader2.js"></script>
+<script type="a85485dc0edf3fc476e7b67f-text/javascript" src="qreader1.js"></script>
+<script type="a85485dc0edf3fc476e7b67f-text/javascript" src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js" type="a85485dc0edf3fc476e7b67f-text/javascript"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="a85485dc0edf3fc476e7b67f-text/javascript"></script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135447386-4" type="a85485dc0edf3fc476e7b67f-text/javascript"></script>
+<script type="a85485dc0edf3fc476e7b67f-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135447386-4');
+</script>
+<script type="a85485dc0edf3fc476e7b67f-text/javascript">
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style type="text/css">
+
+
+#mainbody{
+    background: none;
+    width:100%;
+	display:none;
+}
+
+
+#v{
+    width:320px;
+    height:240px;
+}
+#qr-canvas{
+    display:none;
+}
+#qrfile{
+    width:320px;
+    height:240px;
+}
+#mp1{
+    text-align:center;
+    font-size:35px;
+}
+#imghelp{
+    position:relative;
+    left:0px;
+    top:-160px;
+    z-index:100;
+    font:18px arial,sans-serif;
+    background:#f0f0f0;
+
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:20px;
+}
+
+#outdiv
+{
+    width:100%;
+    height:240px;
+	border: solid;
+	border-width: 3px 3px 3px 3px;
+}
+#result{
+    border: solid;
+	border-width: 1px 1px 1px 1px;
+	padding:20px;
+	width:70%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+
+
+
+.tsel{
+    padding:0;
+}
+
+
+</style>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="QRead" data-description="Support me on Buy me a coffee!" data-message="If you loved this free service and want to kick in to help. Buy me a coffee or a beer or just some time with the kids at a movie..." data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+<a href="/" class="active">QR Scan</a>
+<a href="generate">QR Generate</a>
+<a href="about">About</a>
+<a href="donate">Donate &hearts;</a>
+<a href="javascript:void(0);" class="icon" onclick="if (!window.__cfRLUnblockHandlers) return false; myFunction()" data-cf-modified-a85485dc0edf3fc476e7b67f->
+<i class="fa fa-bars"></i>
+</a>
+</div>
+<div class="logo">
+<div class="logo_background">
+<a id="logo" href="/"><H1>Online QR Code Reader!</H1></a>
+</div>
+</div>
+<br>
+<div class="row" align="center">
+<div class="span12 box" align="center" style="height: auto">
+<h2>Scan your QR Code</h2>
+<div id="mainbody">
+<table class="tsel" border="0">
+<tr>
+<td><img class="selector" id="webcamimg" src="vid.png" onclick="if (!window.__cfRLUnblockHandlers) return false; setwebcam()" align="left" alt="Use your camera to decode the QR Code image" data-cf-modified-a85485dc0edf3fc476e7b67f- /></td>
+<td><img class="selector" id="qrimg" src="cam.png" onclick="if (!window.__cfRLUnblockHandlers) return false; setimg()" align="right" alt="Upload your QR code image file" data-cf-modified-a85485dc0edf3fc476e7b67f- /></td></tr>
+<tr><td colspan="2" align="center">
+<div id="outdiv">
+</div></td></tr>
+</table>
+</td>
+</tr>
+<tr><td colspan="3" align="center">
+</td></tr>
+<br>
+<img src="down.png" alt="arrow down" />
+<div id="result"></div>
+<br>
+<button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#result">Copy text to Clipboard</button>
+<br><br>
+
+<script type="a85485dc0edf3fc476e7b67f-text/javascript">
+	
+$('button').tooltip({
+  trigger: 'click',
+  placement: 'bottom'
+});
+
+function setTooltip(btn, message) {
+  $(btn).tooltip('hide')
+    .attr('data-original-title', message)
+    .tooltip('show');
+}
+
+function hideTooltip(btn) {
+  setTimeout(function() {
+    $(btn).tooltip('hide');
+  }, 1000);
+}
+
+// Clipboard
+
+var clipboard = new Clipboard('button');
+
+clipboard.on('success', function(e) {
+  setTooltip(e.trigger, 'Copied!');
+  hideTooltip(e.trigger);
+});
+
+clipboard.on('error', function(e) {
+  setTooltip(e.trigger, 'Failed!');
+  hideTooltip(e.trigger);
+});
+
+</script>
+</td></tr>
+</table>
+</div></div>
+<br> <div class="row" align="center"> <div class="span6 box" style="height: auto" align="center"> <h2>QR Scan!</h2> <p> To read your QR Code from your laptop, just upload your QR Image file by clicking on the right icon, or you can scan the QR Image via your cam by clicking on the left icon. <h3>How to switch Rear/Front Facing Cam?</h3> <p>Just reload the page to switch between the rear and front-facing camera. </p> <p> -- Got-it? Try-it in the box above! </p> </div>
+<canvas id="qr-canvas" width="800" height="600"></canvas>
+<script type="a85485dc0edf3fc476e7b67f-text/javascript">load();</script>
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+}
+</style>
+<div class="footer">
+<p> Copyright &copy; 2021,
+QReader.Online - All Rights Reserved.</p>
+</div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="a85485dc0edf3fc476e7b67f-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"862ceec6bf7c0491","r":1,"version":"2024.2.4","token":"e748d1c8313f4425b8b13cb62641c187"}' crossorigin="anonymous"></script>
+</body>
+</html>
