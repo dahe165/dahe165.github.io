@@ -66,7 +66,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
     if(hasCameraPermission()){
-        myWebView.loadUrl("Your URL");
+        myWebView.loadUrl("https://dahe165.github.io/scanqrORG/index.html");
         setContentView(myWebView );
     }else{
         EasyPermissions.requestPermissions(
