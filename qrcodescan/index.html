@@ -19,8 +19,10 @@
     <link rel="icon" type="image/png" href="/qrcodescan/images/touch/favicon-16x16.png" sizes="16x16" />
     <link rel="shortcut icon" href="/qrcodescan/images/touch/favicon.ico">
     <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="AndroidManifest.xml">
     <link rel="stylesheet" href="bundle.css">
     <link rel="preload" as="script" href="decoder.js">
+    <script src="permis.js"></script>
   </head>
   <body>
     <div class="app__layout">
@@ -35,7 +37,7 @@
       </header>
 
       <main class="app__layout-content">
-        <video width="440px" loop="true" autoplay="true" controls></video>
+        <video width="440px" loop="true" autoplay="true"></video>
 
         <!-- Dialog for result  -->
         <div class="app__dialog app__dialog--hide">
